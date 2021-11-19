@@ -1,0 +1,96 @@
+nav {
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    padding: 30px 100px;
+    border-bottom: 2px solid $main-color;
+    background-color: #272727;
+    li {
+        list-style-type: none;
+        display: flex;
+	    justify-content: space-between;
+        ul {
+            
+            a {
+                color: $second-color;
+                font-weight: 600;
+                transition: all .2s ease-in-out;
+                    img {
+                        padding-right: 250px;
+                    }
+                &:hover, :focus{
+                    text-decoration: none;
+			        color: $second-color;
+                    font-size: 20px;
+                }
+            }
+            button {
+                background-color: #272727;
+                border: none;
+                color: $second-color;
+                font-weight: 600;
+                transition: all .2s ease-in-out;
+                &:hover{
+                    text-decoration: none;
+			        color: $second-color;
+                    font-size: 20px;
+                }
+                &:focus {
+                    outline: none;
+                    box-shadow: none;
+                  }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    nav {
+        width: 100vw;
+        li {
+            ul {
+                a {
+                    img {
+                        padding-right: 80px;
+                        }
+                }
+                
+            }
+        }
+    }
+}
+@media (max-width: 991px) {
+    nav {
+        height: 70px;
+        padding: 30px 30px;
+        li {
+            ul {    
+                a {
+                        img {
+                            padding-right: 80px;
+                        }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 767px) {
+    nav {
+        height: 70px;
+        padding: 30px 50px;
+        li {
+            ul {
+                a, button{
+                    display: none;
+                        img {
+                            padding-right: 50px;
+                        }
+                }
+            }
+        }
+    }
+    
+}

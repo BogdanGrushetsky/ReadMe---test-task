@@ -1,0 +1,22 @@
+.achievement {
+    min-height: 1100px;
+    background: url('../img/achievement.png') no-repeat 80%/cover;
+    &_title {
+        transform: translateY(-150px);
+        text-align: center;
+        font-size: 64px;
+        color: $main-color;
+    }
+}
+@media (max-width: 1200px) {
+    .achievement {
+        background: url('../img/achievement.png') no-repeat 40%/cover;
+    }
+}
+@media (max-width: 575px){
+    .achievement {
+        &_title {
+            font-size: 32px;
+        }
+    }
+}

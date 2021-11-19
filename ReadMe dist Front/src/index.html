@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    
+    <!-- meta tags create  -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HabitMe</title>
+    <!-- Favicon  -->
+    <link rel="apple-touch-icon" sizes="57x57" href="icons/favicon//apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="icons/favicon//apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="icons/favicon//apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="icons/favicon//apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="icons/favicon//apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="icons/favicon//apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="icons/favicon//apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icons/favicon//apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/favicon//apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="icons/favicon//android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon//favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon//favicon-16x16.png">
+    <link rel="manifest" href="icons/favicon//manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="icons/favicon//ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body id="main">
+    <nav>
+        <li>
+        <ul><a href="#main"><img src="img/logo_white.png" alt="logo"></a></ul>
+        <ul><button data-modal>Наявні звички</button></ul>
+        <ul><button data-modal>Особистий кабінет</button></ul>
+        <ul><button data-modal>Налаштування</button></ul>
+        <ul><a href="./aboutUs/">Про нас</a></ul>
+        </li>
+    </nav>
+    <section class="promo">
+        <div class="promo_img"><img src="img/promo_img_test.png" alt="promo_img"></div>
+        <div class="container">
+            <div class="promo_title">HabitMe</div>
+            <div class="promo_subtitle">Звичка як канат — ми в'ємо її кожного дня, і врешті-решт у нас не вистачає сил розірвати її.</div>
+            <button class="promo_btn" data-modal>Додати звичку</button>
+            <div class="promo_title_link">Як це працює?</div>
+            <div class="promo_link"><img src="img/down.png" alt="scroll down"></div>
+        </div>
+    </section>
+    <section class="calendar">
+        <div class="calendar_top box"></div>
+        <div class="container">
+        <div class="calendar_title ">Додай звичку в календарик</div>
+        </div>
+        <div class="calendar_img box"><img src="img/calendar_img.png" alt="calendar"></div>
+    </section>
+    <section class="progress">
+        <div class="container">
+            <div class="progress_title">Відслідковуй свій прогрес</div>
+        </div>
+        <div class="progress_schedule box"><img src="img/schedule.png" alt="schedule"></div>
+    </section>
+    <section class="friends">
+        <div class="container">
+            <div class="friends_title">Ділись прогресом з друзями</div>
+                <div class="friends_section box">
+                    <span>Останні звички</span>
+                    <div class="friends_section_habit">
+                        <img src="icons/habits/personSimpleRun.png" alt="personSimpleRun" class="friends_section_habit_img">
+                        <div class="friends_section_habit_line">
+                            <span style="background-color: red"></span>
+                        </div>
+                        <div class="friends_section_habit_skill">52%</div>
+                    </div>
+                    <div class="friends_section_habit">
+                        <img src="icons/habits/book.png" alt="personSimpleRun" class="friends_section_habit_img">
+                        <div class="friends_section_habit_line">
+                            <span style="background-color: green"></span>
+                        </div>
+                        <div class="friends_section_habit_skill">21%</div>
+                    </div>
+                    <div class="friends_section_habit">
+                        <img src="icons/habits/eyeClosed.png" alt="personSimpleRun" class="friends_section_habit_img">
+                        <div class="friends_section_habit_line">
+                            <span style="background-color: blue"></span>
+                        </div>
+                        <div class="friends_section_habit_skill">74%</div>
+                    </div>          
+                </div>
+                <div class="friends_section_friends"></div>
+        </div>
+    </section>
+    <section class="achievement">
+        <div class="container">
+            <div class="achievement_title">Пожинай плоди своїх старань!</div>
+        </div>
+    </section>
+    <!-- <section class="footer">
+        <div class="container">
+            <div class="footer_link"><img src="img/down.png" alt="scroll down"></div>
+            <div class="footer_btn" data-modal>Додати звичку прямо зараз</div>    
+        </div>
+    </section> -->
+    <div class="modal">
+        <div class="modal__dialog">
+            <div class="modal__content">
+                <form data-login action="#">
+                    <div class="modal__close" data-close>&times;</div>
+                    <div class="login hide">
+                        <div class="modal__title">Увійти в аккаунт</div>
+                        <div class="modal__subtitle"><span>Не маєш акаунта?</span><a href="#" data-btn-registration-swap>Зареєструватись</a></div>
+                        <input required placeholder="E-mail" data-email-login name="email" type="email" class="modal__input">
+                        <input required placeholder="Пароль" data-password-login name="password" type="password" class="modal__input">
+                        <button type="submit" class="modal__btn" data-btn-login>Увійти</button>
+                    </div>
+                </form>
+                <form data-registration action="#">
+                    <div class="registration">
+                        <div class="modal__title">Створити акаунт</div>
+                        <div class="modal__subtitle"><span>Уже маєш акаунт?</span><a href="#" data-btn-login-swap>Увійти</a></div>
+                        <div class="flex">
+                        <input required placeholder="Ім'я" data-name-register name="name" type="text" class="modal__input">
+                        <input required placeholder="Прізвище" data-subname-register name="subname" type="text" class="modal__input">
+                        </div>
+                        <input required placeholder="E-mail" data-email-register name="email" type="email" class="modal__input">
+                        <input required placeholder="Пароль" data-password-register name="password" type="password" class="modal__input">
+                        <input required placeholder="Підтвердження пароля" data-check-password-register name="confirmPassword" type="password" class="modal__input">
+                        <button type="submit" class="modal__btn" data-register-btn>Зареєструватись</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/services/service.js"></script>
+</body>
+</html>

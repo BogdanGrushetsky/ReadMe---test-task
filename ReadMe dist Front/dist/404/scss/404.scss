@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap');
+ 
+$color: black;
+$bg_color: #d9f3ff;
+$header_bg_color: #272727;
+$bg_image: url(/img/404_back.svg);
+
+$mw1: 480px; // smartphones
+$mw2: 812px; // tablets
+$mw3: 1281px; // desckctop
+
+@mixin remove_def {
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  @include remove_def;
+  background-color: $bg_color;
+  background-image: $bg_image;
+  background-repeat: no-repeat; 
+  background-position-x: center;
+  background-size: 90vw;
+  font-size: 0.9vw;
+
+  @media (max-width: $mw2) {
+    background-position-y: 10vh;
+    background-position-x: 10vw;
+    background-size: 100vw;
+    font-size: 2vw;
+  }
+
+  @media (max-width: $mw1) {
+    font-size: 2.5vw;
+    background-position-y: 15vh;
+    background-position-x: 10vw;
+  }
+
+}
+
+
+header {
+  background-color: $header_bg_color;
+  
+  width: 100vw;
+  height: 79px;
+  
+  position: absolute;
+}
+
+.main {
+  padding: 0px 4vw 0px 4vw
+}
+
+.error {
+  @include remove_def;
+  color: $color;
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 8vh;
+  width: 30vw;
+  line-height: 4.875em;
+
+  @media (max-width: $mw2) {
+    width: 70vw;
+  }
+
+  @media (max-width: $mw1) {
+    width: 94vw;
+  }
+
+
+  &__title {
+    font-family: 'Craftwork Grotesk', sans-serif;
+    font-weight: bold;
+    font-size: 4.5em;
+    padding: 0;
+  }
+
+  &__text {
+    margin-top: -30px;
+    line-height: 1.31em;
+    h5 {
+      @include remove_def;
+      font-size: 0.875em;
+      padding: 0;
+      line-height: 1.31em;
+      font-weight: 600;
+      padding-bottom: 20px;
+    }
+    p {
+      @include remove_def;
+      
+      line-height: 1.125em;
+      font-size: 0.75em;
+      font-weight: 400;
+    }
+    
+  }
+
+
+}

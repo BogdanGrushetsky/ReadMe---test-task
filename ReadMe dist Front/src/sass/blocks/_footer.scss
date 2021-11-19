@@ -1,0 +1,21 @@
+.footer {
+    min-height: 1000px;
+    background: url('../img/footer.png') no-repeat 80%/cover;
+    &_link {
+        display: flex;
+        justify-content: center;
+    }
+    &_btn {
+        width: 510px;
+        height: 133px;
+        background: $main-color;
+        border-radius: 78px;
+        margin: 100px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $second-color;
+        font-size: 30px;
+        cursor: pointer;
+    }
+}

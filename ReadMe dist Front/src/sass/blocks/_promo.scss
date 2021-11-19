@@ -1,0 +1,161 @@
+.promo {
+    position: relative;
+    min-height: 100vh;
+    background: url('../img/promo_background.png') no-repeat 80%/cover;
+    &_img {
+        position: absolute;
+        right: 80px;
+        top: -100px;
+    }
+    &_title {
+        padding-top: 200px;
+        font-size: 144px;
+        line-height: 173px;
+    }
+    &_subtitle {
+        font-weight: 600;
+        font-size: 18px;
+        width: 500px;
+        text-align: left;
+    }
+    &_btn {
+        margin-top: 50px;
+        width: 262px;
+        height: 55px;
+        background: $main-color;
+        border-radius: 51px;
+        font-weight: normal;
+        font-size: 22px;
+        color: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all .2s ease-in-out;
+    }
+    &_btn:hover {
+        transform: scale(1.1);
+    }
+    &_title_link {
+        text-align: center;
+        font-family: Montserrat Alternates;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 48px;
+        color: $main-color;
+        margin-top: 100px;
+    }
+    &_link {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .promo {
+        &_img {
+            display: none;
+        }
+    }
+}
+@media (max-width: 991px){
+    .promo {
+
+        &_title {
+            padding-top: 150px;
+            font-size: 130px;
+            line-height: 173px;
+        }
+        &_btn {
+            margin-top: 30px;
+        }
+        &_title_link {
+            margin-top: 60px;
+        }
+    }
+}
+@media (max-width: 767px){
+    .promo {
+        position: relative;
+        min-height: 100vh;
+        background: url('../img/promo_background.png') no-repeat 80%/cover;
+        &_img {
+            position: absolute;
+            right: 80px;
+            top: -100px;
+        }
+        &_title {
+            padding-top: 100px;
+            font-size: 100px;
+            line-height: 173px;
+            text-align: center;
+        }
+        &_subtitle {
+            text-align: center;
+            font-weight: 600;
+            font-size: 18px;
+            width: 500px;
+            text-align: left;
+        }
+        &_btn {
+            margin: 0 auto;
+            margin-top: 50px;
+            width: 262px;
+            height: 55px;
+            background: $main-color;
+            border-radius: 51px;
+            font-weight: normal;
+            font-size: 22px;
+            color: #FFFFFF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all .2s ease-in-out;
+        }
+        &_btn:hover {
+            transform: scale(1.1);
+        }
+        &_title_link {
+            text-align: center;
+            font-family: Montserrat Alternates;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 48px;
+            color: $main-color;
+            margin-top: 100px;
+        }
+        &_link {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+    }
+}
+@media (max-width: 575px){
+    .promo {
+        &_title {
+            padding-top: 150px;
+            font-size: 70px;
+            line-height: 80px;
+            text-align: center;
+        }
+        &_subtitle {
+            margin-top: 30px;
+            font-weight: 600;
+            font-size: 18px;
+            width: 250px;
+            text-align: center;
+        }
+        &_btn {
+            margin: 0 auto;
+            margin-top: 30px;
+        }
+        &_title_link {
+            font-size: 38px;
+            margin-top: 50px;
+        }
+        &_link {
+            margin-top: 10px;
+        }
+    }
+}
